@@ -1,0 +1,114 @@
+#linkedin {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+    background: url('../static/img/linkedin.png') no-repeat left top;
+}
+
+#email {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin-left: 2px;
+    margin-right: 2px;
+    background: url('../static/img/email.png') no-repeat left top;
+}
+
+#github {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin-right: 2px;
+    background: url('../static/img/github.png') no-repeat left top;
+}
+
+#linkedin:hover, #github:hover, #email:hover   {
+    background-position: -32px 0px
+}
+
+.timeline-list {
+		padding: 10px 0 10px;
+}
+
+.timeline-list:before {
+		content: "";
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: #7f7e82;
+		position: absolute;
+		bottom: 0;
+		left: 70px;
+		z-index: 1;
+}
+
+.timeline-list > li {
+		position: relative;
+		padding: 0 0 0 110px;
+}
+
+	.timeline-list > li:last-child {
+		margin: 0;
+	}
+
+	.timeline-list > li:last-child:after {
+		bottom: -22px;
+	}
+
+	.timeline-list > li:before {
+		content: "";
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		background: #001225;
+		position: absolute;
+		top: 8px;
+		left: 70px;
+		z-index: 1;
+	}
+
+	.timeline-list > li:after {
+		content: "";
+		width: 2px;
+		position: absolute;
+		top: 10px;
+		left: 74px;
+		bottom: -65px;
+		background-image: linear-gradient(#ffffff, #7f7e82);
+	}
+
+	.year.absolute {
+		width: 70px;
+		position: absolute;
+		top: 5px;
+		left: 0;
+		margin: 0;
+	}
+
+    .bullet-list {
+		padding: 22px 0 0;
+	}
+
+	.bullet-list > li {
+		margin: 0 0 28px;
+		padding: 0 0 0 24px;
+	}
+
+	.bullet-list > li:before {
+		width: 7px;
+		height: 6px;
+		top: 8px;
+		left: 3px;
+	}
+
+    .year {
+        text-transform: uppercase;
+        font-family: "Brandon-grotesque", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+        font-weight: 900;
+        line-height: 1.2;
+        font-size: 15px;
+        color: #7f7e82;
+        margin: 0 0 12px;
+    }
