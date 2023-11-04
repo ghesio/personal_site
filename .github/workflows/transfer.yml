@@ -1,0 +1,23 @@
+name: Transfer to server
+
+on:
+  push:
+    tags:
+      - "prod*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Deploy
+
+    steps:
+      - uses: actions/checkout@master
+      - name: Publish
+        uses: nogsantos/scp-deploy@master
+        with:
+          src: ./*
+          host: ${{ secrets.SSH_HOST }}
+          remote: ${{ secrets.SSH_DIR }}
+          port: ${{ secrets.SSH_PORT }}
+          user: ${{ secrets.SSH_USER }}
+          key: ${{ secrets.SSH_KEY }}
