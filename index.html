@@ -3,14 +3,12 @@
 
 <head>
     <title>ghes.io | Nicola Giannelli</title>
-    <link rel="icon" type="image/x-icon" href="static/img/favicon.png">
+    <link rel="icon" type="image/x-icon" href="static/img/favicon.png" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/timeline.css">
-
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body class="h-screen scrollbar-hide">
@@ -20,26 +18,39 @@
         <div class="bg-cyan-950 col-span-8 md:col-span-2 text-white">
             <div class="grid grid-cols-10 gap-3 py-10">
                 <div class="col-start-2 col-span-8 md:col-start-3 md:col-span-6">
-                    <img src="static/img/logo-white.png" class="p-10 md:p-10">
+                    <img src="static/img/logo-white.png" class="p-10 md:p-0 md:mt-10">
                     <div>
                         <p class="pt-10 pb-2 text-2xl font-bold">Name</p>
                         <p class="font-semibold"> Nicola Giannelli</p>
                         <p class="pt-10 pb-2 text-2xl font-bold">Focus</p>
-                        <p class="font-semibold"> Software engineering</p>
+                        <p class="font-semibold"> Software engineering and IT related stuff</p>
                         <p class="pt-10 pb-2 text-2xl font-bold">Say hello</p>
                         <div class="pt-1">
-                            <a href="mailto:hi@ghes.io">
-                                <div id="email"></div>
+                            <a href="mailto:hi@ghes.io" class='text-slate-500 focus:text-slate-850 hover:text-white'
+                                target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="2em"
+                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path fill="currentColor"
+                                        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                                </svg>
                             </a>
                         </div>
                         <p class="pt-2 pb-2 text-2xl font-bold">Connect</p>
-                        <div class="pt-1">
-                            <a href="https://www.linkedin.com/in/nicola-giannelli-3690ab126/" target="_blank">
-                                <div id="linkedin"></div>
-                            </a>
-                            <a href="https://www.github.com/ghesio" target="_blank">
-                                <div id="github"></div>
-                            </a>
+                        <div class="pt-1 flex gap-4">
+                            <a href="https://www.linkedin.com/in/nicola-giannelli-3690ab126/"
+                                class='text-slate-500 focus:text-slate-850 hover:text-white' target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="2em"
+                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path fill="currentColor"
+                                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                                </svg> </a>
+                            <a href="https://www.github.com/ghesio"
+                                class='text-slate-500 focus:text-slate-850 hover:text-white' target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="2em"
+                                    viewBox="0 0 480 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path fill="currentColor"
+                                        d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z" />
+                                </svg> </a>
                         </div>
                     </div>
                 </div>
@@ -47,114 +58,210 @@
         </div>
         <!-- right -->
         <div class="bg-slate-200 col-span-8 md:col-span-6 px-10 pb-12 h-auto overflow-scroll scrollbar-hide">
-            <div class="grid grid-cols-8 gap-3">
-                <div class="col-span-8 md:col-span-4">
-                    <p class="pt-10 text-2xl font-bold">Experience</p>
-                    <p class="py-8">Elit ipsum adipisicing sint dolore ex esse. In ipsum esse incididunt elit id. Est
-                        est proident magna cillum ullamco minim officia irure id consectetur laborum nostrud. Ad ut id
-                        excepteur nisi officia duis cupidatat pariatur ea nostrud. Dolor nisi mollit minim labore eu
-                        adipisicing veniam officia labore laboris ad consectetur reprehenderit. In sint aliqua veniam
-                        tempor. Laboris velit irure sint duis exercitation officia duis laborum officia.</p>
-                    <!-- JOBS -->
+            <div class="grid grid-cols-8 gap-x-8">
+                <div class="col-span-8">
+                    <p class="pt-10 text-2xl font-bold">About me</p>
+                    <p class="pt-2"> I spend lot of time in front of PCs doing stuff - i'm just the friendly
+                        Italian
+                        software
+                        engineer in the neighborhood.
+                    </p>
+                    <p class="pt-2 pb-8">
+                        One day I would love to be a software architect but for now I love coding in Java <svg
+                            class="inline w-5 h-5" xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <path fill="currentColor"
+                                d="M277.74 312.9c9.8-6.7 23.4-12.5 23.4-12.5s-38.7 7-77.2 10.2c-47.1 3.9-97.7 4.7-123.1 1.3-60.1-8 33-30.1 33-30.1s-36.1-2.4-80.6 19c-52.5 25.4 130 37 224.5 12.1zm-85.4-32.1c-19-42.7-83.1-80.2 0-145.8C296 53.2 242.84 0 242.84 0c21.5 84.5-75.6 110.1-110.7 162.6-23.9 35.9 11.7 74.4 60.2 118.2zm114.6-176.2c.1 0-175.2 43.8-91.5 140.2 24.7 28.4-6.5 54-6.5 54s62.7-32.4 33.9-72.9c-26.9-37.8-47.5-56.6 64.1-121.3zm-6.1 270.5a12.19 12.19 0 0 1-2 2.6c128.3-33.7 81.1-118.9 19.8-97.3a17.33 17.33 0 0 0-8.2 6.3 70.45 70.45 0 0 1 11-3c31-6.5 75.5 41.5-20.6 91.4zM348 437.4s14.5 11.9-15.9 21.2c-57.9 17.5-240.8 22.8-291.6.7-18.3-7.9 16-19 26.8-21.3 11.2-2.4 17.7-2 17.7-2-20.3-14.3-131.3 28.1-56.4 40.2C232.84 509.4 401 461.3 348 437.4zM124.44 396c-78.7 22 47.9 67.4 148.1 24.5a185.89 185.89 0 0 1-28.2-13.8c-44.7 8.5-65.4 9.1-106 4.5-33.5-3.8-13.9-15.2-13.9-15.2zm179.8 97.2c-78.7 14.8-175.8 13.1-233.3 3.6 0-.1 11.8 9.7 72.4 13.6 92.2 5.9 233.8-3.3 237.1-46.9 0 0-6.4 16.5-76.2 29.7zM260.64 353c-59.2 11.4-93.5 11.1-136.8 6.6-33.5-3.5-11.6-19.7-11.6-19.7-86.8 28.8 48.2 61.4 169.5 25.9a60.37 60.37 0 0 1-21.1-12.8z" />
+                        </svg>
+                        <br> Spoken languages: Italian and English<br>
+                    </p>
 
+                    <p class="text-2xl font-bold">Skills</p>
+                    <ol class="list-disc pb-8 tag-list">
+                        <li>knowledge of design patterns and code quality standards</li>
+                        <li>excellent skills in the analysis and design of software systems</li>
+                        <li>proficient in backend software development for API services using Java EE, with expertise in
+                            Spring and Spring Boot frameworks</li>
+                        <li>familiarity with Agile and Kanban development methodologies</li>
+                        <li>strong expertise in relational database systems and document storage systems (Solr and
+                            ElasticSearch in particular)</li>
+                        <li>excellent proficiency in using GIT</li>
+                        <li>proficient in configuring, maintaining, and operating UNIX-based servers</li>
+                        <li>basic 2D/3D CAD software usage skills</li>
+                        <li>basic operation and maintenance capabilities with 3D printers and CNC mills</li>
+                        <li>good skills in hardware installation, maintenance, and troubleshooting</li>
+                        <li>basic ability to design and implement IoT and embedded systems</li>
+                        <li>basic knowledge of web frontend development, including HTML, CSS, and JavaScript (this site
+                            took me a loooong time)</li>
+                        <li>intermediate-level knowledge of programming languages such as C, C++, C#, and Assembly, as
+                            well as Bash scripting (memories from the university years)</li>
+                        <li>average expertise in Python, particularly applied in the context of Machine Learning and
+                            Artificial Intelligence</li>
+                        <li>all the soft skills that must be in every curricula: communication - problem solving -
+                            adaptability -
+                            satience -
+                            self-awareness -
+                            time management and so on...
+                        </li>
+                    </ol>
+
+
+
+                    <p class="text-2xl font-bold">Hobbies</p>
+                    <p class="pt-2 pb-8"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa sit molestias
+                        nemo perferendis eveniet quasi nisi repellendus hic, doloribus dolorum atque. Eius facilis
+                        recusandae autem aperiam. Dolore aut veritatis neque.
+                    </p>
+
+
+                </div>
+                <div class="col-span-8 md:col-span-4">
+                    <p class="text-2xl font-bold">Experience</p>
+                    <p class="py-8">In recent years, I have had the opportunity to immerse myself in a world of
+                        creativity and innovation, contributing to the development of cutting-edge software solutions.
+                        <br> My passion for technology and my constant commitment to acquiring new skills have allowed
+                        me to tackle complex challenges and create high-quality software that enhances people's lives
+                        and business operations.
+                    </p>
+                    <!-- JOBS -->
+                    <ol class="relative border-l border-gray-200 dark:border-gray-700">
+                        <li class="mb-10 ml-4">
+                            <div
+                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                            </div>
+                            <time class="mb-1 text-sm font-normal leading-none">2017 - current</time>
+                            <h3 class="text-lg font-semibold">Software engineering @ QuestIT</h3>
+                            <p class="mb-4 text-base font-normal "> Starting as a developer, I initially worked on
+                                low-priority projects but steadily improved my skills, gradually moving towards more
+                                significant projects. As time went on, I evolved into a software engineer responsible
+                                for algorithm design and critical systems requirements analysis. Eventually, I advanced
+                                to the position of team lead for enterprise clients.
+                                <br>
+                                I've also expanded my skills into infrastructure management, DevOps and time - project
+                                management.
+                                <br>
+                                I've mostly worked on Digital Human AI projects as a backend developer, focusing on Java
+                                Enterprise - indexing systems like Solr and Elasticsearch.
+
+                            </p>
+                            </a>
+                        </li>
+                        <li class="mb-10 ml-4">
+                            <div
+                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                            </div>
+                            <time class="mb-1 text-sm font-normal leading-none">2016 - 2017</time>
+                            <h3 class="text-lg font-semibold">Software developer @ BrainControl/LiquidWeb</h3>
+                            <p class="mb-4 text-base font-normal "> In this job experience I worked on machine learning
+                                algorithms to help develop smart algorithms for reduced movement patients. </p>
+                        </li>
+                        <li class="mb-10 ml-4">
+                            <div
+                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+                            </div>
+                            <time class="mb-1 text-sm font-normal leading-none">2012 - 2016</time>
+                            <h3 class="text-lg font-semibold">Dirty deeds done dirt cheap @ everywhere</h3>
+                            <p class="mb-4 text-base font-normal "> I've was always been taught that working is
+                                important - since forever. Multiple job experience, from electrician, handyman, internet
+                                and hardware technician... to whatever comes to mind. </p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="col-span-8 md:col-span-4">
+                    <p class="text-2xl font-bold">Instruction</p>
+                    <!-- INSTRUCTION -->
+                    <p class="py-8">My academic journey has provided me with a solid foundation of technical knowledge
+                        and fueled my passion for computer science. <br> Throughout my years of study, I acquired
+                        fundamental skills in programming, algorithms, and computer system architectures, preparing me
+                        for a career in the field of software engineering and information technology.</p>
 
                     <ol class="relative border-l border-gray-200 dark:border-gray-700">
                         <li class="mb-10 ml-4">
                             <div
                                 class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
                             </div>
-                            <time
-                                class="mb-1 text-sm font-normal leading-none">February 2022</time>
-                            <h3 class="text-lg font-semibold">Application UI code in
-                                Tailwind CSS</h3>
-                            <p class="mb-4 text-base font-normal ">Get access to over
-                                20+ pages including a dashboard layout, charts, kanban board, calendar, and pre-order
-                                E-commerce & Marketing pages.</p>
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 5h12m0 0L9 1m4 4L9 9" />
-                            </svg></a>
+                            <time class="mb-1 text-sm font-normal leading-none">2018-2021</time>
+                            <h3 class="text-lg font-semibold">Master's Degree in Computer and Automation Engineering -
+                                Information Systems</h3>
+                            <h2 class="font-semibold">Università degli studi di Siena</h3>
+                                <p class="mb-4 text-base font-normal ">During my academic journey, I acquired key skills
+                                    in various fields of computer science, including artificial intelligence with a
+                                    focus on machine learning and natural language processing, pattern recognition, the
+                                    design of complex software and systems using methodologies and best practices, and
+                                    bioinformatics, which addressed the analysis of biological data through the use of
+                                    specialized computer tools and algorithms.</p>
+
                         </li>
                         <li class="mb-10 ml-4">
                             <div
                                 class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
                             </div>
-                            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March
-                                2022</time>
-                            <h3 class="text-lg font-semibold ">Marketing UI design in Figma
-                            </h3>
-                            <p class="text-base font-normal ">All of the pages and
-                                components are first designed in Figma and we keep a parity between the two versions
-                                even as we update the project.</p>
+                            <time class="mb-1 text-sm font-normal leading-none">2018-2019</time>
+                            <h3 class="text-lg font-semibold">Research grant</h3>
+                            <h2 class="font-semibold">Università degli studi di Siena</h3>
+                                <p class="mb-4 text-base font-normal ">Implementation of a document archive system based
+                                    on search index and relational database aimed at the storage and semantic search of
+                                    Latin texts from the Middle Ages</p>
                         </li>
-                        <li class="ml-4">
+                        <li class="mb-10 ml-4">
                             <div
                                 class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
                             </div>
-                            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April
-                                2022</time>
-                            <h3 class="text-lg font-semibold ">E-Commerce UI code in
-                                Tailwind CSS</h3>
-                            <p class="text-base font-normal ">Get started with dozens of
-                                web components and interactive elements built on top of Tailwind CSS.</p>
+                            <time class="mb-1 text-sm font-normal leading-none">2017</time>
+                            <h3 class="text-lg font-semibold">FabAcademy</h3>
+                            <h2 class="font-semibold">Santa Chiara Lab</h3>
+                                <p class="mb-4 text-base font-normal ">The acquired skills include understanding key
+                                    principles and practices in engineering, project management, computer-aided design,
+                                    computer-controlled cutting and production, electronics design, computer-controlled
+                                    machining, electronic circuit design, molding and casting, the use of composite
+                                    materials, embedded programming, 3D scanning and printing, input device development,
+                                    interface and application programming, mechanical design, output device management,
+                                    networking and communications, machine design, project development, and the ethical
+                                    and legal implications related to invention, intellectual property, and income
+                                    derived from innovative projects.</p>
                         </li>
-                        <li class="ml-4">
+                        <li class="mb-10 ml-4">
                             <div
                                 class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
                             </div>
-                            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April
-                                2022</time>
-                            <h3 class="text-lg font-semibold ">E-Commerce UI code in
-                                Tailwind CSS</h3>
-                            <p class="text-base font-normal ">Get started with dozens of
-                                web components and interactive elements built on top of Tailwind CSS.</p>
+                            <time class="mb-1 text-sm font-normal leading-none">2011-2017</time>
+                            <h3 class="text-lg font-semibold">Bacheleor Degree in Computer and Information Engineering -
+                                Information Systems</h3>
+                            <h2 class="font-semibold">Università degli studi di Siena</h3>
+                                <p class="mb-4 text-base font-normal ">My first steps in engineering: a very long and
+                                    pretty fun ride!</p>
                         </li>
-                        <li class="ml-4">
+                        <li class="mb-10 ml-4">
                             <div
                                 class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
                             </div>
-                            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April
-                                2022</time>
-                            <h3 class="text-lg font-semibold ">E-Commerce UI code in
-                                Tailwind CSS</h3>
-                            <p class="text-base font-normal ">Get started with dozens of
-                                web components and interactive elements built on top of Tailwind CSS.</p>
-                        </li>
-                        <li class="ml-4">
-                            <div
-                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-                            </div>
-                            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April
-                                2022</time>
-                            <h3 class="text-lg font-semibold ">E-Commerce UI code in
-                                Tailwind CSS</h3>
-                            <p class="text-base font-normal ">Get started with dozens of
-                                web components and interactive elements built on top of Tailwind CSS.</p>
-                        </li>
-                        <li class="ml-4">
-                            <div
-                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-                            </div>
-                            <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April
-                                2022</time>
-                            <h3 class="text-lg font-semibold ">E-Commerce UI code in
-                                Tailwind CSS</h3>
-                            <p class="text-base font-normal ">Get started with dozens of
-                                web components and interactive elements built on top of Tailwind CSS. BANANA 🍌</p>
+                            <time class="mb-1 text-sm font-normal leading-none">2011</time>
+                            <h3 class="text-lg font-semibold">High school diploma</h3>
+                            <h2 class="font-semibold">IT and electronics</h3>
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
+                                </svg></a>
                         </li>
                     </ol>
-                </div>
-                <div class="col-span-8 md:col-span-4">
-                    <p class="pt-10 text-2xl font-bold">Technical</p>
-                    <p class="py-8">Pariatur eiusmod velit aute cupidatat amet consectetur proident ad id incididunt
-                        sit. Proident incididunt pariatur commodo aliquip cillum nisi reprehenderit est sunt quis et
-                        consequat pariatur adipisicing. Esse commodo adipisicing dolore aute adipisicing enim excepteur
-                        excepteur nostrud aliqua cupidatat aliqua. Consequat nulla cillum deserunt laborum aute
-                        deserunt.</p>
                 </div>
             </div>
         </div>
 
     </div>
+
+    <!-- scroll to top (MOBILE ONLY)-->
+    <button type="button"
+        class="!fixed bottom-5 right-5 hidden rounded-full bg-cyan-950 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out"
+        id="btn-back-to-top">
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" class="h-4 w-4" role="img" viewBox="0 0 448 512">
+            <path fill="currentColor"
+                d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
+            </path>
+        </svg>
+    </button>
+
+
+    <script src="js/button.js"> </script>
 
 </body>
 

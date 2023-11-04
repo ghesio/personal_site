@@ -1,33 +1,7 @@
-#linkedin {
-    width: 32px;
-    height: 32px;
-    display: inline-block;
-    margin-left: 2px;
-    margin-right: 2px;
-    background: url('../static/img/linkedin.png') no-repeat left top;
+html, body {
+    -webkit-tap-highlight-color: transparent;
 }
-
-#email {
-    width: 32px;
-    height: 32px;
-    display: inline-block;
-    margin-left: 2px;
-    margin-right: 2px;
-    background: url('../static/img/email.png') no-repeat left top;
-}
-
-#github {
-    width: 32px;
-    height: 32px;
-    display: inline-block;
-    margin-right: 2px;
-    background: url('../static/img/github.png') no-repeat left top;
-}
-
-#linkedin:hover, #github:hover, #email:hover   {
-    background-position: -32px 0px
-}
-
+ 
 /* hide scrollbar */
 
 .scrollbar-hide::-webkit-scrollbar {
@@ -38,4 +12,29 @@
 .scrollbar-hide {
 	-ms-overflow-style: none;  /* IE and Edge */
 	scrollbar-width: none;  /* Firefox */
+}
+
+/* pallini */
+.tag-list {
+	letter-spacing: -4px;
+	color: #001225;
+}
+
+.tag-list > li {
+	margin: 0;
+	display: inline;
+	vertical-align: top;
+	position: relative;
+	letter-spacing: 0;
+}
+
+.tag-list > li:after {
+	content: "•";
+	display: inline-block;
+	vertical-align: top;
+	margin: 1px 5px 0;
+}
+
+.tag-list > li:last-child:after {
+	display: none;
 }
