@@ -1,40 +1,59 @@
-html, body {
+html,
+body {
     -webkit-tap-highlight-color: transparent;
 }
- 
+
 /* hide scrollbar */
 
 .scrollbar-hide::-webkit-scrollbar {
-	display: none;
+    display: none;
 }
 
 /* For IE, Edge and Firefox */
 .scrollbar-hide {
-	-ms-overflow-style: none;  /* IE and Edge */
-	scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 /* pallini */
 .tag-list {
-	letter-spacing: -4px;
-	color: #001225;
+    letter-spacing: -4px;
+    color: #001225;
 }
 
-.tag-list > li {
-	margin: 0;
-	display: inline;
-	vertical-align: top;
-	position: relative;
-	letter-spacing: 0;
+.tag-list>li {
+    margin: 0;
+    display: inline;
+    vertical-align: top;
+    position: relative;
+    letter-spacing: 0;
 }
 
-.tag-list > li:after {
-	content: "•";
-	display: inline-block;
-	vertical-align: top;
-	margin: 1px 5px 0;
+.tag-list>li:after {
+    content: "•";
+    display: inline-block;
+    vertical-align: top;
+    margin: 1px 5px 0;
 }
 
-.tag-list > li:last-child:after {
-	display: none;
+.tag-list>li:last-child:after {
+    display: none;
 }
+
+p span#a {
+    display: inline;
+  }
+  
+  p:hover span#a {
+    display: none;
+  }
+  
+  P span#b {
+    display: none;
+  }
+  
+  p:hover span#b {
+    display: inline;
+  }
