@@ -26,3 +26,36 @@ console.log(`
 `);
 
 console.log(`Please no more CSS. Thx Giannelli 🍌`);
+
+// TL;DR / full story toggle (TL;DR is the default)
+const modeToggle = document.getElementById("mode-toggle");
+
+const setMode = (full) => {
+  document.body.classList.toggle("tldr", !full);
+  modeToggle.setAttribute("aria-checked", String(full));
+  try {
+    localStorage.setItem("ghes-full-story", full ? "1" : "0");
+  } catch (e) {}
+};
+
+try {
+  if (localStorage.getItem("ghes-full-story") === "1") setMode(true);
+} catch (e) {}
+
+modeToggle.addEventListener("click", () => {
+  setMode(document.body.classList.contains("tldr"));
+});
+
+// dark mode toggle (default: follows the system setting)
+const themeToggle = document.getElementById("theme-toggle");
+const syncTheme = () =>
+  themeToggle.setAttribute("aria-checked", String(document.documentElement.classList.contains("dark")));
+syncTheme();
+
+themeToggle.addEventListener("click", () => {
+  const dark = document.documentElement.classList.toggle("dark");
+  try {
+    localStorage.setItem("ghes-theme", dark ? "dark" : "light");
+  } catch (e) {}
+  syncTheme();
+});

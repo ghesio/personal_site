@@ -5,306 +5,344 @@
     <title>ghes.io | Nicola Giannelli</title>
     <link rel="icon" type="image/x-icon" href="static/img/favicon.png" />
 
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Nicola Giannelli - senior backend engineer from Siena, Italy. Java, databases, high-availability systems." />
+    <script>
+        try {
+            var t = localStorage.getItem("ghes-theme");
+            if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches))
+                document.documentElement.classList.add("dark");
+        } catch (e) {}
+    </script>
 
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tailwind.css?v=20261101" />
+    <link rel="stylesheet" href="css/style.css?v=20261101" />
 </head>
 
-<body class="h-screen scrollbar-hide">
+<body class="h-screen scrollbar-hide tldr">
     <!-- main div -->
     <div class="grid grid-cols-8 md:h-full">
         <!-- left -->
-        <div class="bg-cyan-950 col-span-8 md:col-span-2 text-white text-center	md:text-left">
+        <div class="sidebar col-span-8 md:col-span-2 text-center md:text-left flex flex-col justify-between">
             <div class="flex flex-col gap-3 p-10">
                 <div>
-                    <img src="static/img/logo-white.png" class="p-10 md:p-0 md:mt-10">
                     <div>
-                        <p class="pt-10 pb-2 text-2xl font-bold">Name</p>
-                        <p class="font-semibold"> Nicola Giannelli</p>
+                        <p class="pb-2 text-2xl font-bold">Name</p>
+                        <p class="font-semibold">Nicola Giannelli</p>
                         <p class="pt-10 pb-2 text-2xl font-bold">Focus</p>
-                        <p class="font-semibold"> Software engineering and IT related stuff</p>
+                        <p class="font-semibold">Backend engineering: Java, databases and systems that are not allowed to go down</p>
                         <p class="pt-10 pb-2 text-2xl font-bold">Say hello</p>
                         <div class="pt-1 flex place-content-center md:place-content-start">
-                            <a href="mailto:hi@ghes.io" class='text-slate-500 focus:text-slate-850 hover:text-white'
+                            <a href="mailto:hi@ghes.io" aria-label="Email" class='icon-link'
                                 target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="2em"
-                                    viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                    <path fill="currentColor"
-                                        d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
+                                <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path fill="currentColor" d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z" />
                                 </svg>
                             </a>
                         </div>
                         <p class="pt-2 pb-2 text-2xl font-bold">Connect</p>
                         <div class="pt-1 flex gap-4 place-content-center md:place-content-start">
-                            <a href="https://www.linkedin.com/in/nicola-giannelli-3690ab126/"
-                                class='text-slate-500 focus:text-slate-850 hover:text-white' target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="2em"
-                                    viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                    <path fill="currentColor"
-                                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
-                                </svg> </a>
-                            <a href="https://www.github.com/ghesio"
-                                class='text-slate-500 focus:text-slate-850 hover:text-white' target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="2em"
-                                    viewBox="0 0 480 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                                    <path fill="currentColor"
-                                        d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z" />
-                                </svg> </a>
+                            <a href="https://www.github.com/ghesio" aria-label="GitHub"
+                                class='icon-link' target="_blank">
+                                <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 480 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                    <path fill="currentColor" d="M186.1 328.7c0 20.9-10.9 55.1-36.7 55.1s-36.7-34.2-36.7-55.1 10.9-55.1 36.7-55.1 36.7 34.2 36.7 55.1zM480 278.2c0 31.9-3.2 65.7-17.5 95-37.9 76.6-142.1 74.8-216.7 74.8-75.8 0-186.2 2.7-225.6-74.8-14.6-29-20.2-63.1-20.2-95 0-41.9 13.9-81.5 41.5-113.6-5.2-15.8-7.7-32.4-7.7-48.8 0-21.5 4.9-32.3 14.6-51.8 45.3 0 74.3 9 108.8 36 29-6.9 58.8-10 88.7-10 27 0 54.2 2.9 80.4 9.2 34-26.7 63-35.2 107.8-35.2 9.8 19.5 14.6 30.3 14.6 51.8 0 16.4-2.6 32.7-7.7 48.2 27.5 32.4 39 72.3 39 114.2zm-64.3 50.5c0-43.9-26.7-82.6-73.5-82.6-18.9 0-37 3.4-56 6-14.9 2.3-29.8 3.2-45.1 3.2-15.2 0-30.1-.9-45.1-3.2-18.7-2.6-37-6-56-6-46.8 0-73.5 38.7-73.5 82.6 0 87.8 80.4 101.3 150.4 101.3h48.2c70.3 0 150.6-13.4 150.6-101.3zm-82.6-55.1c-25.8 0-36.7 34.2-36.7 55.1s10.9 55.1 36.7 55.1 36.7-34.2 36.7-55.1-10.9-55.1-36.7-55.1z" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <!-- TL;DR toggle -->
+                        <p class="pt-10 pb-2 text-2xl font-bold">How much time do you have?</p>
+                        <div class="pt-1 flex place-content-center md:place-content-start">
+                            <button type="button" id="mode-toggle" role="switch" aria-checked="false"
+                                class="flex items-center gap-3 pill rounded-full px-4 py-2 text-sm font-semibold transition">
+                                <span class="mode-label-tldr">TL;DR</span>
+                                <span class="relative inline-block h-5 w-9 track rounded-full">
+                                    <span class="toggle-knob absolute top-0.5 left-0.5 h-4 w-4 knob rounded-full transition-transform"></span>
+                                </span>
+                                <span class="mode-label-full">Full story</span>
+                            </button>
+                        </div>
+
+                        <!-- dark mode toggle -->
+                        <p class="pt-6 pb-2 text-2xl font-bold">Lights</p>
+                        <div class="pt-1 flex place-content-center md:place-content-start">
+                            <button type="button" id="theme-toggle" role="switch" aria-checked="false"
+                                class="flex items-center gap-3 pill rounded-full px-4 py-2 text-sm font-semibold transition">
+                                <span class="theme-label-light">Light</span>
+                                <span class="relative inline-block h-5 w-9 track rounded-full">
+                                    <span class="theme-knob absolute top-0.5 left-0.5 h-4 w-4 knob rounded-full transition-transform"></span>
+                                </span>
+                                <span class="theme-label-dark">Dark</span>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="px-10 pb-6 text-xs text-slate-500">Made with ❤ using Tailwind - many thanks to <a
+            <div class="px-10 pb-6 text-xs muted">Made with ❤ using Tailwind - many thanks to <a
                     href="https://jurygiannelli.dev" target="_blank">ix315</a></div>
         </div>
         <!-- right -->
-        <div class="bg-slate-200 col-span-8 md:col-span-6 px-10 pb-12 h-auto overflow-scroll scrollbar-hide">
+        <div class="main-panel col-span-8 md:col-span-6 px-10 pb-12 h-auto overflow-scroll scrollbar-hide">
             <div class="grid grid-cols-8 gap-x-8">
+
+                <!-- ABOUT -->
                 <div class="col-span-8">
                     <p class="pt-10 text-2xl font-bold">About me</p>
-                    <p class="pt-2"> I spend lot of time in front of PCs doing stuff - i'm just the friendly
-                        Italian
-                        software
-                        engineer in the neighborhood.
+                    <p class="pt-2">
+                        Senior backend engineer from Siena, Italy. I've spent the last 9 years on the same enterprise
+                        platform, growing from junior developer to technical owner of the backend handling conversations and the back-office.
                     </p>
-                    <p class="pt-2 pb-8">
-                        One day I would love to be a software architect but for now I love coding in Java <svg
-                            class="inline w-5 h-5" xmlns="http://www.w3.org/2000/svg" height="1em"
-                            viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
-                            <path fill="currentColor"
-                                d="M277.74 312.9c9.8-6.7 23.4-12.5 23.4-12.5s-38.7 7-77.2 10.2c-47.1 3.9-97.7 4.7-123.1 1.3-60.1-8 33-30.1 33-30.1s-36.1-2.4-80.6 19c-52.5 25.4 130 37 224.5 12.1zm-85.4-32.1c-19-42.7-83.1-80.2 0-145.8C296 53.2 242.84 0 242.84 0c21.5 84.5-75.6 110.1-110.7 162.6-23.9 35.9 11.7 74.4 60.2 118.2zm114.6-176.2c.1 0-175.2 43.8-91.5 140.2 24.7 28.4-6.5 54-6.5 54s62.7-32.4 33.9-72.9c-26.9-37.8-47.5-56.6 64.1-121.3zm-6.1 270.5a12.19 12.19 0 0 1-2 2.6c128.3-33.7 81.1-118.9 19.8-97.3a17.33 17.33 0 0 0-8.2 6.3 70.45 70.45 0 0 1 11-3c31-6.5 75.5 41.5-20.6 91.4zM348 437.4s14.5 11.9-15.9 21.2c-57.9 17.5-240.8 22.8-291.6.7-18.3-7.9 16-19 26.8-21.3 11.2-2.4 17.7-2 17.7-2-20.3-14.3-131.3 28.1-56.4 40.2C232.84 509.4 401 461.3 348 437.4zM124.44 396c-78.7 22 47.9 67.4 148.1 24.5a185.89 185.89 0 0 1-28.2-13.8c-44.7 8.5-65.4 9.1-106 4.5-33.5-3.8-13.9-15.2-13.9-15.2zm179.8 97.2c-78.7 14.8-175.8 13.1-233.3 3.6 0-.1 11.8 9.7 72.4 13.6 92.2 5.9 233.8-3.3 237.1-46.9 0 0-6.4 16.5-76.2 29.7zM260.64 353c-59.2 11.4-93.5 11.1-136.8 6.6-33.5-3.5-11.6-19.7-11.6-19.7-86.8 28.8 48.2 61.4 169.5 25.9a60.37 60.37 0 0 1-21.1-12.8z" />
-                        </svg>
-                        <br> Spoken languages: Italian and English<br>
+                    <p class="pt-2 tldr-only">
+                        Since 2022 I'm the main technical owner of an on-premise installation for a banking customer, with
+                        strict high-availability requirements.
                     </p>
+                    <div class="full-only">
+                        <p class="pt-2">
+                            Since 2022 I'm the main technical owner of an on-premise installation for a banking customer, with
+                            strict high-availability requirements. Releases there happen without the
+                            users ever noticing - that's the whole point.
+                        </p>
+                        <p class="pt-2">
+                            I care about databases, high availability, observability and privacy by design. I also
+                            strongly believe that a good senior engineer deletes more code than they write.
+                        </p>
+                    </div>
+                        <p class="pt-2 full-only">I'm just the friendly Italian software engineer in the neighborhood, and I still love
+                        coding in Java <svg class="inline w-5 h-5" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path fill="currentColor" d="M277.74 312.9c9.8-6.7 23.4-12.5 23.4-12.5s-38.7 7-77.2 10.2c-47.1 3.9-97.7 4.7-123.1 1.3-60.1-8 33-30.1 33-30.1s-36.1-2.4-80.6 19c-52.5 25.4 130 37 224.5 12.1zm-85.4-32.1c-19-42.7-83.1-80.2 0-145.8C296 53.2 242.84 0 242.84 0c21.5 84.5-75.6 110.1-110.7 162.6-23.9 35.9 11.7 74.4 60.2 118.2zm114.6-176.2c.1 0-175.2 43.8-91.5 140.2 24.7 28.4-6.5 54-6.5 54s62.7-32.4 33.9-72.9c-26.9-37.8-47.5-56.6 64.1-121.3zm-6.1 270.5a12.19 12.19 0 0 1-2 2.6c128.3-33.7 81.1-118.9 19.8-97.3a17.33 17.33 0 0 0-8.2 6.3 70.45 70.45 0 0 1 11-3c31-6.5 75.5 41.5-20.6 91.4zM348 437.4s14.5 11.9-15.9 21.2c-57.9 17.5-240.8 22.8-291.6.7-18.3-7.9 16-19 26.8-21.3 11.2-2.4 17.7-2 17.7-2-20.3-14.3-131.3 28.1-56.4 40.2C232.84 509.4 401 461.3 348 437.4zM124.44 396c-78.7 22 47.9 67.4 148.1 24.5a185.89 185.89 0 0 1-28.2-13.8c-44.7 8.5-65.4 9.1-106 4.5-33.5-3.8-13.9-15.2-13.9-15.2zm179.8 97.2c-78.7 14.8-175.8 13.1-233.3 3.6 0-.1 11.8 9.7 72.4 13.6 92.2 5.9 233.8-3.3 237.1-46.9 0 0-6.4 16.5-76.2 29.7zM260.64 353c-59.2 11.4-93.5 11.1-136.8 6.6-33.5-3.5-11.6-19.7-11.6-19.7-86.8 28.8 48.2 61.4 169.5 25.9a60.37 60.37 0 0 1-21.1-12.8z" /></svg></p>
+                    <p class="pt-2 pb-8">Spoken languages: Italian and English</p>
                 </div>
 
+                <!-- EXPERIENCE -->
                 <div class="col-span-8">
-                    <p class="text-2xl font-bold">Experience</p>
-                    <p class="pt-2 pb-8">In recent years, I have had the opportunity to immerse myself in a world of
-                        creativity and innovation, contributing to the development of cutting-edge software solutions.
-                        <br> My passion for technology and my constant commitment to acquiring new skills have allowed
-                        me to tackle complex challenges and create high-quality software that enhances people's lives
-                        and business operations.
-                    </p>
-                    <!-- JOBS -->
-                    <ol class="relative border-l border-gray-200 dark:border-gray-700">
+                    <p class="text-2xl font-bold pb-6">Experience</p>
+                    <ol class="relative border-l timeline">
+
                         <li class="mb-10 ml-4">
-                            <div
-                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-                            </div>
+                            <div class="absolute w-3 h-3 dot rounded-full mt-1.5 -left-1.5 border-2"></div>
                             <time class="mb-1 text-sm font-normal leading-none">2017 - current</time>
-                            <h3 class="text-lg font-semibold">Software engineer @ QuestIT</h3>
-                            <p class="mb-4 text-base font-normal "> Starting as a developer, I initially worked on
-                                low-priority projects but steadily improved my skills, gradually moving towards more
-                                significant projects. As time went on, I evolved into a software engineer responsible
-                                for algorithm design and critical systems requirements analysis. Eventually, I advanced
-                                to the position of team lead for enterprise clients.
-                                <br>
-                                I've also expanded my skills into infrastructure management, DevOps and time - project
-                                management.
-                                <br>
-                                I've mostly worked on Digital Human AI projects as a backend developer, focusing on Java
-                                Enterprise - indexing systems like Solr and Elasticsearch.
-
+                            <h3 class="text-lg font-semibold">Software Engineer @ Quest-it</h3>
+                            <p class="text-sm italic">Tech Lead, backend, since 2023</p>
+                            <p class="pt-2 text-base">
+                                Enterprise conversational platform, delivered as multi-tenant SaaS and as on-premise installations for banking customers. Several backend services, including the one handling conversations and the back-office, in Java on a Spring-based framework, MySQL/MariaDB, Solr, Redis, integrated with several LLM providers
+                                and an in-house RAG system.
                             </p>
-                            </a>
-                        </li>
-                        <li class="mb-10 ml-4">
-                            <div
-                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
+
+                            <!-- TL;DR version -->
+                            <ul class="tldr-only list-disc ml-5 pt-2 space-y-1">
+                                <li>Technical owner of the backend handling conversations and the back-office (~90% of the commits): new features and user stories are planned with me, and every change that touches it goes through my analysis, decisions, estimates and scoping.</li>
+                                <li>Main technical owner of a banking customer's on-premise installation: 15+
+                                    production releases on my own, no chat downtime for users during standard updates.</li>
+                                <li>Built application tracing that, in some cases, cut incident diagnosis from 3-4 hours to
+                                    about 10 minutes.</li>
+                                <li>Inherited and refactored the backend: up to 95% less database load on key APIs,
+                                    thousands of lines removed, Flyway migrations introduced, Java 8 to 17.</li>
+                            </ul>
+
+                            <!-- Full version -->
+                            <div class="full-only">
+                                <p class="pt-4 font-semibold">Tech Lead, backend · 2023 - current</p>
+                                <ul class="list-disc ml-5 pt-1 space-y-1">
+                                    <li>Technical owner of the backend handling conversations and the back-office (~90% of the commits): every development
+                                        request that touches it goes through my functional analysis, implementation
+                                        decisions, estimates and scoping, supporting the product team and
+                                        project managers.</li>
+                                    <li>Technical point of contact for enterprise customers: requirements gathering and
+                                        analysis, progress reviews with customers, structured feedback to internal teams and
+                                        agreed timelines met.</li>
+                                    <li>Joined the team working for a banking customer in 2022 and became its
+                                        main technical owner: evolutions, installations and 15+ production releases
+                                        handled on my own, under strict high-availability requirements, with no chat downtime for
+                                        users during standard updates.</li>
+                                    <li>Proactively found a resilience issue and coordinated the fix with the customer and the
+                                        CTO, with transparent communication - delivered a week early.</li>
+                                    <li>Designed and rolled out MariaDB master-slave replication with no master downtime
+                                        and no data loss.</li>
+                                    <li>Co-designed, with two colleagues, the multi-instance architecture of the platform, with
+                                        multiple nodes of the backend services and of the other components.</li>
+                                    <li>Privacy by design for banking customers: encryption of sensitive data, automatic data deletion on expiry or on event, with an
+                                        audit trail.</li>
+                                    <li>Pushed and carried out, with a colleague, the adoption of the Elastic Stack as the company observability platform:
+                                        Elastic APM on every application with W3C distributed tracing. Introduced Uptime Kuma for fast reaction
+                                        to service outages.</li>
+                                    <li>Built application tracing that, in some cases, cut incident diagnosis from 3-4 hours to
+                                        about 10 minutes, with no more local debugging.</li>
+                                    <li>Automated staging deployment: from 15 to 5 minutes per release, with 2-4 releases a day.</li>
+                                    <li>Introduced stateless JWT authentication, now the company standard.</li>
+                                    <li>Planning of user stories and new features with stakeholders; for urgent requests with
+                                        incomplete requirements, scope defined with stakeholders, then alternatives presented
+                                        with explicit trade-offs on delivery time and maintenance cost.</li>
+                                    <li>Onboarding and pair programming with colleagues from other teams and junior
+                                        developers.</li>
+                                </ul>
+
+                                <p class="pt-4 font-semibold">Backend owner · 2019 - 2023</p>
+                                <ul class="list-disc ml-5 pt-1 space-y-1">
+                                    <li>Inherited and refactored the product backend: found the bottlenecks through the MySQL slow query log and
+                                        custom logging, rewrote critical modules with caching (up to 95% less database load on some APIs), removed thousands of lines
+                                        of obsolete code, introduced design patterns where they were missing.</li>
+                                    <li>Introduced Flyway for versioned database migrations, replacing SQL scripts
+                                        applied by hand before every release.</li>
+                                    <li>Migrated the backend from Java 8 to Java 17.</li>
+                                    <li>Built ETL flows for customer-specific modules.</li>
+                                </ul>
+
+                                <p class="pt-4 font-semibold">Software Engineer · 2017 - 2019</p>
+                                <ul class="list-disc ml-5 pt-1 space-y-1">
+                                    <li>Java backend services and full-text search on Solr and Elasticsearch.</li>
+                                </ul>
                             </div>
+                        </li>
+
+                        <li class="mb-10 ml-4">
+                            <div class="absolute w-3 h-3 dot rounded-full mt-1.5 -left-1.5 border-2"></div>
                             <time class="mb-1 text-sm font-normal leading-none">2016 - 2017</time>
-                            <h3 class="text-lg font-semibold">Software developer @ BrainControl/LiquidWeb</h3>
-                            <p class="mb-4 text-base font-normal "> In this job experience I worked on machine learning
-                                algorithms to help develop smart algorithms to be used in sensors used by by reduced
-                                movement or locked-in patients. </p>
+                            <h3 class="text-lg font-semibold">Software Developer @ Liquidweb</h3>
+                            <p class="pt-2 text-base">Sensor data processing for assistive devices used by people with
+                                reduced mobility.</p>
                         </li>
-                        <li class="mb-10 ml-4">
-                            <div
-                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-                            </div>
-                            <time class="mb-1 text-sm font-normal leading-none">2012 - 2016</time>
+
+                        <li class="mb-10 ml-4 full-only">
+                            <div class="absolute w-3 h-3 dot rounded-full mt-1.5 -left-1.5 border-2"></div>
+                            <time class="mb-1 text-sm font-normal leading-none">2013 - 2015</time>
                             <h3 class="text-lg font-semibold">Dirty deeds done dirt cheap @ everywhere</h3>
-                            <p class="mb-4 text-base font-normal "> I've was always been taught that working is
-                                important - since forever. Multiple job experience, from electrician, handyman, internet
-                                and hardware technician... to whatever comes to mind. </p>
+                            <p class="pt-2 text-base">
+                                While studying engineering I did a bit of everything: electrician's helper, ADSL network
+                                technician and freelance web developer building small static websites. Cables, ladders, routers... and whatever else came
+                                along.
+                            </p>
                         </li>
                     </ol>
                 </div>
 
+                <!-- EDUCATION -->
                 <div class="col-span-8">
-                    <p class="text-2xl font-bold">Instruction</p>
-                    <!-- INSTRUCTION -->
-                    <p class="pt-2 py-8">My academic journey has provided me with a solid foundation of technical
-                        knowledge
-                        and fueled my passion for computer science. <br> Throughout my years of study, I acquired
-                        fundamental skills in programming, algorithms, and computer system architectures, preparing me
-                        for a career in the field of software engineering and information technology.</p>
-
-                    <ol class="relative border-l border-gray-200 dark:border-gray-700">
+                    <p class="text-2xl font-bold pb-6">Education</p>
+                    <ol class="relative border-l timeline">
                         <li class="mb-10 ml-4">
-                            <div
-                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-                            </div>
-                            <time class="mb-1 text-sm font-normal leading-none">2018-2021</time>
-                            <h3 class="text-lg font-semibold">Master's Degree in Computer and Automation Engineering -
-                                Information Systems</h3>
-                            <h2 class="font-semibold">Università degli studi di Siena</h3>
-                                <p class="mb-4 text-base font-normal ">During my academic journey, I acquired key skills
-                                    in various fields of computer science, including artificial intelligence with a
-                                    focus on machine learning and natural language processing, pattern recognition, the
-                                    design of complex software and systems using methodologies and best practices, and
-                                    bioinformatics, which addressed the analysis of biological data through the use of
-                                    specialized computer tools and algorithms.</p>
-
+                            <div class="absolute w-3 h-3 dot rounded-full mt-1.5 -left-1.5 border-2"></div>
+                            <time class="mb-1 text-sm font-normal leading-none">2018 - 2021</time>
+                            <h3 class="text-lg font-semibold">Master's Degree in Computer and Automation Engineering - Information Systems · 110/110</h3>
+                            <p class="font-semibold">Università degli Studi di Siena</p>
+                            <p class="pt-2 text-base full-only">Machine learning, natural language processing, pattern
+                                recognition, design of complex software systems and bioinformatics.</p>
                         </li>
                         <li class="mb-10 ml-4">
-                            <div
-                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-                            </div>
-                            <time class="mb-1 text-sm font-normal leading-none">2018-2019</time>
-                            <h3 class="text-lg font-semibold">Research grant</h3>
-                            <h2 class="font-semibold">Università degli studi di Siena</h3>
-                                <p class="mb-4 text-base font-normal ">Implementation of a document archive system based
-                                    on search index and relational database aimed at the storage and semantic search of
-                                    Latin texts from the Middle Ages</p>
+                            <div class="absolute w-3 h-3 dot rounded-full mt-1.5 -left-1.5 border-2"></div>
+                            <time class="mb-1 text-sm font-normal leading-none">2018 - 2019</time>
+                            <h3 class="text-lg font-semibold">Research grant - <a href="https://ela.unisi.it" target="_blank" rel="noopener" class="underline">ELA, Eurasian Latin Archive</a></h3>
+                            <p class="font-semibold">Università degli Studi di Siena - DIISM</p>
+                            <p class="pt-2 text-base full-only">A document archive for medieval Latin texts, built on a
+                                search index and a relational database (Java EE, MySQL, Elasticsearch) for storage and
+                                semantic search.</p>
                         </li>
                         <li class="mb-10 ml-4">
-                            <div
-                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-                            </div>
-                            <time class="mb-1 text-sm font-normal leading-none">2017</time>
-                            <h3 class="text-lg font-semibold">FabAcademy</h3>
-                            <h2 class="font-semibold">Santa Chiara Lab</h3>
-                                <p class="mb-4 text-base font-normal ">The acquired skills include understanding key
-                                    principles and practices in engineering, project management, computer-aided design,
-                                    computer-controlled cutting and production, electronics design, computer-controlled
-                                    machining, electronic circuit design, molding and casting, the use of composite
-                                    materials, embedded programming, 3D scanning and printing, input device development,
-                                    interface and application programming, mechanical design, output device management,
-                                    networking and communications, machine design, project development, and the ethical
-                                    and legal implications related to invention, intellectual property, and income
-                                    derived from innovative projects.</p>
+                            <div class="absolute w-3 h-3 dot rounded-full mt-1.5 -left-1.5 border-2"></div>
+                            <time class="mb-1 text-sm font-normal leading-none">2011 - 2017</time>
+                            <h3 class="text-lg font-semibold">Bachelor's Degree in Computer and Information Engineering</h3>
+                            <p class="font-semibold">Università degli Studi di Siena</p>
+                            <p class="pt-2 text-base full-only">My first steps in engineering: a long and
+                                <span id="a"> pretty </span><span id="b"> (not so) pretty </span>
+                                fun ride!
+                            </p>
                         </li>
                         <li class="mb-10 ml-4">
-                            <div
-                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-                            </div>
-                            <time class="mb-1 text-sm font-normal leading-none">2011-2017</time>
-                            <h3 class="text-lg font-semibold">Bacheleor Degree in Computer and Information Engineering -
-                                Information Systems</h3>
-                            <h2 class="font-semibold">Università degli studi di Siena</h3>
-                                <p class="mb-4 text-base font-normal ">My first steps in engineering: a long and
-                                    <span id="a"> pretty </span><span id="b"> (not so) pretty </span>
-                                    fun ride!
-                                </p>
-                        </li>
-                        <li class="mb-10 ml-4">
-                            <div
-                                class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -left-1.5 border border-white dark:border-gray-900 dark:bg-gray-700">
-                            </div>
+                            <div class="absolute w-3 h-3 dot rounded-full mt-1.5 -left-1.5 border-2"></div>
                             <time class="mb-1 text-sm font-normal leading-none">2011</time>
-                            <h3 class="text-lg font-semibold">High school diploma</h3>
-                            <h2 class="font-semibold">IT and electronics</h3>
-                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                    stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
-                                </svg></a>
+                            <h3 class="text-lg font-semibold">High school diploma in Computer Science · 100/100</h3>
+                            <p class="font-semibold">ITIS Tito Sarrocchi, Siena</p>
+                            <p class="pt-2 text-base full-only">Where it all started: I was already into computers
+                                before university.</p>
                         </li>
                     </ol>
                 </div>
 
+                <!-- SKILLS -->
                 <div class="col-span-8">
                     <p class="text-2xl font-bold">Skills</p>
+                    <ol class="tldr-only list-disc pt-2 pb-8 tag-list">
+                        <li>Java</li>
+                        <li>Spring</li>
+                        <li>MySQL / MariaDB</li>
+                        <li>Solr</li>
+                        <li>Elasticsearch</li>
+                        <li>Flyway</li>
+                        <li>Docker</li>
+                        <li>Elastic APM</li>
+                        <li>Linux</li>
+                    </ol>
+                    <ul class="full-only pt-2 pb-8 space-y-1">
+                        <li><b>Backend:</b> Java, Java EE, Spring / Spring Boot, REST APIs, design patterns, clean
+                            code, TDD</li>
+                        <li><b>Data:</b> MySQL / MariaDB (replication, failover, Flyway migrations), Solr / Solr Cloud,
+                            Elasticsearch, ETL, Redis (basic)</li>
+                        <li><b>LLM and NLP:</b> backend integration with LLM providers and RAG systems, NLP
+                            (tokenization, POS tagging, entity extraction)</li>
+                        <li><b>Reliability and operations:</b> high availability, performance analysis (Elastic APM, MySQL slow query log), Docker, Bitbucket Pipelines, Elastic
+                            APM, distributed tracing, Uptime Kuma, Linux, Bash</li>
+                        <li><b>Security and privacy:</b> encryption of sensitive data, JWT, data retention and
+                            audit, dependency vulnerability management (Snyk, CVSS-based prioritization), GDPR (authorized to process personal data)</li>
+                        <li><b>Way of working:</b> Agile / Kanban, Jira (stories, estimates, time tracking), Git,
+                            conventional commits, SonarQube (quality gates)</li>
+                    </ul>
+                </div>
+
+                <!-- PUBLICATIONS -->
+                <div class="col-span-8">
+                    <p class="text-2xl font-bold">Publications</p>
+                    <p class="pt-2 pb-8 tldr-only">4 papers, 3 posters and 2 dissertations, mostly on NLP and deep
+                        learning. Switch to the full story to see them.</p>
+                    <div class="full-only">
+                        <b class="block pt-2">Papers</b>
+                        <ul class="list-disc ml-5 pb-4 space-y-1">
+                            <li><span class='italic'>N. Giannelli, M. Bianchini et al.</span> - Segmentation of Aorta 3D
+                                CT Images Based on 2D Convolutional Neural Networks | Electronics 2021, 10, 2559</li>
+                            <li><span class='italic'>E. Carbé, N. Giannelli</span> - First steps in building the
+                                Eurasian Latin Archive | Qualitative and Quantitative Methods in Libraries, Jan. 2021,
+                                pp. 577-590</li>
+                            <li><span class='italic'>E. Carbé, N. Giannelli</span> - ELA: fasi del progetto, bilanci e
+                                prospettive | Atti del IX Convegno Annuale AIUCD, Università Cattolica del Sacro Cuore,
+                                Milano, pp. 61-66</li>
+                            <li><span class='italic'>E. Carbé, N. Giannelli</span> - A Digital Platform for the "Latin
+                                Silk Road": Issues and Perspectives in Building a Multilingual Corpus for Textual
+                                Analysis | DH2019</li>
+                        </ul>
+
+                        <b class="block pt-2">Posters</b>
+                        <ul class="list-disc ml-5 pb-4 space-y-1">
+                            <li><span class='italic'>E. Carbé, N. Giannelli</span> - ELA: fasi del progetto, bilanci e
+                                prospettive | AIUCD, Milan, 15-17 January 2020</li>
+                            <li><span class='italic'>E. Carbé, N. Giannelli</span> - A Framework for the Eurasian Latin
+                                Archive using CLTK and NLTK | V4Py Summer Python School (V4 & DARIAH-CEH), Prague,
+                                24-29 June 2019</li>
+                            <li><span class='italic'>Stella, L. Rigutini, M. Bianchini, E. Carbé, N. Giannelli</span> -
+                                The ELA Project | Spring School LiSeH 2019, Graz, 25 April 2019</li>
+                        </ul>
+
+                        <b class="block pt-2">Dissertations</b>
+                        <ul class="list-disc ml-5 pb-8 space-y-1">
+                            <li>Tecniche di Deep Learning per la segmentazione di aorta - Master's, supervisor
+                                <span class='italic'>Prof. Monica Bianchini</span></li>
+                            <li>Support Vector Machine per la classificazione di dati provenienti da sensori -
+                                Bachelor's, supervisor <span class='italic'>Prof. Monica Bianchini</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- HOBBIES -->
+                <div class="col-span-8 full-only">
+                    <p class="text-2xl font-bold">Hobbies</p>
                     <ol class="list-disc pt-2 pb-8 tag-list">
-                        <li>knowledge of design patterns and code quality standards</li>
-                        <li>excellent skills in the analysis and design of software systems</li>
-                        <li>proficient in backend software development for API services using Java EE, with expertise in
-                            Spring and Spring Boot frameworks</li>
-                        <li>familiarity with Agile and Kanban development methodologies</li>
-                        <li>strong expertise in relational database systems and document storage systems (Solr and
-                            ElasticSearch in particular)</li>
-                        <li>excellent proficiency in using GIT</li>
-                        <li>proficient in configuring, maintaining, and operating UNIX-based servers</li>
-                        <li>basic 2D/3D CAD software usage skills</li>
-                        <li>basic operation and maintenance capabilities with 3D printers and CNC mills</li>
-                        <li>good skills in hardware installation, maintenance, and troubleshooting</li>
-                        <li>basic ability to design and implement IoT and embedded systems</li>
-                        <li>basic knowledge of web frontend development, including HTML, CSS, and JavaScript (this site
-                            took me a loooong time)</li>
-                        <li>intermediate-level knowledge of programming languages such as C, C++, C#, and Assembly, as
-                            well as Bash scripting (memories from the university years)</li>
-                        <li>average expertise in Python, particularly applied in the context of Machine Learning and
-                            Artificial Intelligence</li>
-                        <li>all the soft skills that must be in every curricula: communication - problem solving -
-                            adaptability -
-                            satience -
-                            self-awareness -
-                            time management and so on...
-                        </li>
-                    </ol>
-
-
-                    <p class="text-2xl font-bold">Publications and miscellaneous stuff</p>
-                    <b class="pt-2"> Publications</b>
-                    <ol class="list-disc pb-4 tag-list">
-                        <li> <span class='italic'>N.Giannelli, M. Bianchini et al.</span> - Segmentation of Aorta 3D CT
-                            Images Based on 2D Convolutional Neural Networks | Electronics 2021, 10, 2559 </li>
-                        <li> <span class='italic'>E. Carbé, N. Giannelli </span> - A Digital Platform for the “Latin
-                            Silk Road”: Issues and Perspectives in Building a Multilingual Corpus for Textual Analysis |
-                            DH2019 </li>
-                        <li> <span class='italic'>E. Carbé, N. Giannelli </span> - ELA: fasi del progetto, bilanci e
-                            prospettive | Atti del IX Convegno Annuale AIUCD. La svolta inevitabile: sfide e prospettive
-                            per l'Informatica Umanistica. Milano: Università Cattolica del Sacro Cuore, pp. 61-66</li>
-                        <li> <span class='italic'>E. Carbé, N. Giannelli </span> - First steps in building the Eurasian
-                            Latin Archive. | Qualitative and Quantitative Methods in Libraries, jan. 2021. pp. 577-590
-                        </li>
-                    </ol>
-
-                    <b class="pt-2"> Poster </b>
-                    <ol class="list-disc pb-4 tag-list">
-                        <li><span class='italic'>Stella, L. Rigutini, M. Bianchini, E. Carbé, N. Giannelli </span> - The
-                            ELA
-                            Project, Poster session for
-                            the Spring School LiSeH 2019, Graz, 25 aprile 2019</li>
-
-                        <li> <span class='italic'> E. Carbé, N. Giannelli </span> - A Framework for the
-                            Eurasian Latin Archive using CLTK and NLTK, Poster
-                            session for V4Py: Gentle Introduction to Natural Language Processing and Corpus Linguistics,
-                            A
-                            V4&DARIAH-CEH Summer Python school, Prague, 24-29 giugno 2019</li>
-                        <li><span class='italic'>E. Carbé, N. Giannelli </span> - A Framework for the Eurasian Latin
-                            Archive using CLTK and NLTK, Poster
-                            session for V4Py: Gentle Introduction to Natural Language Processing and Corpus Linguistics,
-                            A
-                            V4&DARIAH-CEH Summer Python school, Prague, 24-29 giugno 2019</li>
-
-                        <li> <span class='italic'>E. Carbé, N. Giannelli </span> - ELA: fasi del progetto, bilanci e
-                            prospettive, Milan AIUCD, 15-17
-                            Gennaio 2020</li>
-                    </ol>
-
-                    <b class="pt-2"> Dissertations </b>
-                    <ol class="list-disc pb-8 tag-list">
-                        <li>Support Vector Machine per la classificazione di dati provenienti da sensori - <span
-                                class='italic'>Speaker Prof. Monica Bianchini </span></li>
-                        <li>Tecniche di Deep Learning per la segmentazione di aorta - Speaker Prof. Monica Bianchini
-                            </span></li>
-                    </ol>
-
-                    <p class="text-2xl font-bold">Hobbies
-                    </p>
-                    <ol class="list-disc pt-2 pb-8 tag-list">
-                        <li><b>not</b> coding in my free time</li>
                         <li>trekking</li>
                         <li>music addict</li>
                         <li>saxophone player</li>
                         <li>bookworm</li>
-                        <li>taekwondoker</li>
+                        <li>former taekwondoker</li>
+                        <li>lifting weights</li>
+                        <li>dockerizing stuff at home</li>
                         <li>noob gamer</li>
                         <li>science lover</li>
                     </ol>
-
                 </div>
 
             </div>
@@ -313,18 +351,16 @@
     </div>
 
     <!-- scroll to top (MOBILE ONLY)-->
-    <button type="button"
-        class="!fixed bottom-5 right-5 hidden rounded-full bg-cyan-950 p-3 text-xs font-medium uppercase leading-tight text-white shadow-md transition duration-150 ease-in-out"
+    <button type="button" aria-label="Back to top"
+        class="!fixed bottom-5 right-5 hidden back-to-top rounded-full p-3 text-xs font-medium uppercase leading-tight shadow-md transition duration-150 ease-in-out"
         id="btn-back-to-top">
         <svg aria-hidden="true" focusable="false" data-prefix="fas" class="h-4 w-4" role="img" viewBox="0 0 448 512">
-            <path fill="currentColor"
-                d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z">
-            </path>
+            <path fill="currentColor" d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"></path>
         </svg>
     </button>
 
 
-    <script src="js/button.js"> </script>
+    <script src="js/button.js?v=20261101"> </script>
 
 </body>
 

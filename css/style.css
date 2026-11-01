@@ -1,3 +1,90 @@
+/* palette from Flame (github.com/pawelmalak/flame): "paper" for light, "tron" for dark */
+:root {
+    --bg: #f8f6f1;
+    --panel: #eeeae0;
+    --text: #4c432e;
+    --muted: #7a705a;
+    --accent: #aa9a73;
+}
+
+html.dark {
+    --bg: #242b33;
+    --panel: #1c2228;
+    --text: #effbff;
+    --muted: #8b9aa7;
+    --accent: #6ee2ff;
+}
+
+html,
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
+::selection {
+    background: var(--accent);
+    color: var(--bg);
+}
+
+.sidebar {
+    background: var(--panel);
+    color: var(--text);
+}
+
+.main-panel {
+    background: var(--bg);
+    color: var(--text);
+}
+
+.timeline {
+    border-color: var(--muted);
+}
+
+.dot {
+    background: var(--accent);
+    border-color: var(--bg);
+}
+
+.muted {
+    color: var(--muted);
+}
+
+.icon-link {
+    color: var(--muted);
+}
+
+.icon-link:hover,
+.icon-link:focus {
+    color: var(--accent);
+}
+
+.pill {
+    border: 2px solid var(--accent);
+    color: var(--text);
+}
+
+.pill:hover {
+    background: color-mix(in srgb, var(--accent) 15%, transparent);
+}
+
+.track {
+    background: var(--muted);
+}
+
+body:not(.tldr) #mode-toggle .track,
+html.dark #theme-toggle .track {
+    background: var(--accent);
+}
+
+.knob {
+    background: var(--bg);
+}
+
+.back-to-top {
+    background: var(--accent);
+    color: var(--bg);
+}
+
 html,
 body {
     -webkit-tap-highlight-color: transparent;
@@ -20,7 +107,7 @@ body {
 /* pallini */
 .tag-list {
     letter-spacing: -4px;
-    color: #001225;
+    color: var(--text);
 }
 
 .tag-list>li {
@@ -57,3 +144,30 @@ p span#a {
   p:hover span#b {
     display: inline;
   }
+/* TL;DR / full story toggle */
+body.tldr .full-only {
+    display: none;
+}
+
+body:not(.tldr) .tldr-only {
+    display: none;
+}
+
+body:not(.tldr) .toggle-knob {
+    transform: translateX(1rem);
+}
+
+body.tldr .mode-label-full,
+body:not(.tldr) .mode-label-tldr {
+    opacity: 0.5;
+}
+
+/* dark mode toggle */
+html.dark .theme-knob {
+    transform: translateX(1rem);
+}
+
+html:not(.dark) .theme-label-dark,
+html.dark .theme-label-light {
+    opacity: 0.5;
+}
