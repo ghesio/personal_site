@@ -171,3 +171,56 @@ html:not(.dark) .theme-label-dark,
 html.dark .theme-label-light {
     opacity: 0.5;
 }
+
+
+/* other formats: desktop only (same breakpoint as the sidebar layout) */
+.desktop-only { display: none !important; }
+@media (min-width: 768px) {
+    .desktop-only { display: revert !important; }
+    a.spec-chip.desktop-only { display: inline-flex !important; }
+}
+
+.about-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+
+.spec-chip {
+    align-items: stretch;
+    border: 1.5px solid color-mix(in srgb, var(--accent) 70%, transparent);
+    border-radius: 6px;
+    overflow: hidden;
+    font-family: ui-monospace, "Cascadia Code", Menlo, Consolas, monospace;
+    font-size: 12px;
+    line-height: 1;
+    text-decoration: none;
+    color: var(--muted);
+    margin-bottom: 4px;
+    transition: background-color .15s, color .15s, border-color .15s;
+}
+.spec-chip:hover, .spec-chip:focus-visible {
+    color: var(--text);
+    border-color: var(--accent);
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+.spec-chip > span { padding: 6px 9px; display: flex; align-items: center; }
+.spec-label { font-family: inherit; border-right: 1.5px solid color-mix(in srgb, var(--accent) 70%, transparent); }
+.spec-method { background: var(--accent); color: var(--bg); font-weight: 700; letter-spacing: .04em; }
+
+.term-line { font-size: 13px; padding-bottom: 12px; }
+.term-link {
+    font-family: ui-monospace, "Cascadia Code", Menlo, Consolas, monospace;
+    color: var(--text);
+    text-decoration: underline;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 3px;
+}
+.term-link:hover, .term-link:focus-visible { color: var(--accent); }
+.term-cursor {
+    display: inline-block;
+    width: .55em;
+    height: 1.05em;
+    margin-left: 2px;
+    vertical-align: text-bottom;
+    background: var(--accent);
+    animation: blink 1.1s steps(1) infinite;
+}
+@keyframes blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .term-cursor { animation: none; } }

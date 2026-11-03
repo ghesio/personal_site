@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ghes.io | Nicola Giannelli</title>
+    <link rel="icon" type="image/x-icon" href="../static/img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nicola Giannelli - senior backend engineer from Siena, Italy. Java, databases, high-availability systems." />
+    <script>
+        try {
+            var t = localStorage.getItem("ghes-theme");
+            if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches))
+                document.documentElement.classList.add("dark");
+        } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="css/style.css?v=20261103" />
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="wrap topbar-inner">
+            <a class="brand" href="/" title="Back to the human-readable version">{ghes.io}</a>
+            <form class="explore" onsubmit="return false">
+                <input type="text" value="https://ghes.io/api/v9/nicola-giannelli.json" readonly aria-label="Spec URL" />
+                <button type="button" tabindex="-1">Explore</button>
+            </form>
+        </div>
+    </header>
+
+    <main class="wrap">
+        <section class="info">
+            <h1>Nicola Giannelli <span class="badge version">9.0.0</span> <span class="badge oas">OAS 3.1</span></h1>
+            <a class="spec-link" href="#">/api/v9/nicola-giannelli.json</a>
+            <p class="description">
+                Senior backend engineer from Siena, Italy. Java, databases and systems that are not allowed to go down.
+                <br>9 years on the same enterprise platform, from junior developer to technical owner of the backend
+                handling conversations and the back-office.
+            </p>
+            <p class="info-links">
+                <a href="/" class="back-link">&larr; Back to the human-readable version</a>
+                <a href="mailto:hi@ghes.io">Contact the developer</a>
+                <a href="https://www.github.com/ghesio" target="_blank" rel="noopener">GitHub</a>
+            </p>
+        </section>
+
+        <section class="scheme-container">
+            <div class="servers">
+                <label for="server">Servers</label>
+                <select id="server">
+                    <option>https://ghes.io - production (Siena, IT)</option>
+                </select>
+            </div>
+            <div class="global-params">
+                <div class="param">
+                    <label for="verbose"><code>verbose</code> <span class="in">query</span></label>
+                    <select id="verbose">
+                        <option value="false">false (TL;DR)</option>
+                        <option value="true">true (full story)</option>
+                    </select>
+                </div>
+                <div class="param">
+                    <label for="accept"><code>Accept</code> <span class="in">header</span></label>
+                    <select id="accept">
+                        <option value="json">application/json</option>
+                        <option value="html">text/html (for humans)</option>
+                    </select>
+                </div>
+                <div class="param">
+                    <label for="theme"><code>theme</code> <span class="in">header</span></label>
+                    <select id="theme">
+                        <option value="light">light</option>
+                        <option value="dark">dark</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <div id="tags"></div>
+
+        <section class="models">
+            <h2 class="tag-header" data-toggle="models-body">
+                <span>Schemas</span>
+                <span class="arrow">&#9662;</span>
+            </h2>
+            <div id="models-body" class="models-body collapsed"></div>
+        </section>
+    </main>
+
+    <footer class="wrap footer">
+        Made with ❤ - many thanks to <a href="https://jurygiannelli.dev" target="_blank" rel="noopener">ix315</a>
+    </footer>
+
+    <script src="js/button.js?v=20261103"></script>
+</body>
+
+</html>

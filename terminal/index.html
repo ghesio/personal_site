@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ghes.io | Nicola Giannelli</title>
+    <link rel="icon" type="image/x-icon" href="../static/img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Nicola Giannelli - senior backend engineer from Siena, Italy. Java, databases, high-availability systems." />
+    <script>
+        try {
+            var t = localStorage.getItem("ghes-theme");
+            if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches))
+                document.documentElement.classList.add("dark");
+        } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="css/style.css?v=20261103" />
+</head>
+
+<body>
+    <main class="window">
+        <div class="titlebar" aria-hidden="true">
+            <span class="dots"><i></i><i></i><i></i></span>
+            <span class="title">guest@ghes.io: ~</span>
+            <span class="dots-spacer"></span>
+        </div>
+
+        <div class="screen" id="screen">
+            <h1 class="sr-only">Nicola Giannelli - Senior Backend Engineer</h1>
+            <div id="out" role="log" aria-live="polite"></div>
+            <form id="prompt-line" class="line prompt-line" autocomplete="off" hidden>
+                <label for="cmd" class="prompt"><span class="u">guest</span>@<span class="h">ghes.io</span>:<span class="p">~</span>$</label>
+                <input id="cmd" type="text" spellcheck="false" autocapitalize="off" autocorrect="off"
+                    aria-label="Type a command, for example help" />
+            </form>
+
+            <noscript>
+                <div class="noscript">
+                    <p><strong>Nicola Giannelli</strong> - Senior Backend Engineer, Siena, Italy.</p>
+                    <p>9 years on the same enterprise platform, from junior developer to technical owner of the
+                        backend handling conversations and the back-office. Java, databases and systems that are not
+                        allowed to go down.</p>
+                    <p>This terminal needs JavaScript. Meanwhile: <a href="mailto:hi@ghes.io">hi@ghes.io</a> &middot;
+                        <a href="https://www.github.com/ghesio">github.com/ghesio</a></p>
+                </div>
+            </noscript>
+        </div>
+    </main>
+
+    <nav class="quick" aria-label="Quick commands">
+        <button type="button" data-cmd="whoami">whoami</button>
+        <button type="button" data-cmd="experience">experience</button>
+        <button type="button" data-cmd="skills">skills</button>
+        <button type="button" data-cmd="education">education</button>
+        <button type="button" data-cmd="contact">contact</button>
+        <button type="button" data-cmd="theme">theme</button>
+        <button type="button" data-cmd="help">help</button>
+    </nav>
+
+    <footer class="footer">
+        Made with ❤ - many thanks to <a href="https://jurygiannelli.dev" target="_blank" rel="noopener">ix315</a>
+    </footer>
+
+    <script src="js/data.js?v=20261103"></script>
+    <script src="js/button.js?v=20261103"></script>
+</body>
+
+</html>

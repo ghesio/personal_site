@@ -17,7 +17,7 @@
     </script>
 
     <link rel="stylesheet" href="css/tailwind.css?v=20261101" />
-    <link rel="stylesheet" href="css/style.css?v=20261101" />
+    <link rel="stylesheet" href="css/style.css?v=20261103" />
 </head>
 
 <body class="h-screen scrollbar-hide tldr">
@@ -79,6 +79,10 @@
                     </div>
                 </div>
             </div>
+            <!-- terminal invite (DESKTOP ONLY) -->
+            <p class="term-line muted desktop-only px-10">Too fancy?
+                <a class="term-link" href="terminal/">Try the terminal experience<span class="term-cursor" aria-hidden="true"></span></a>
+            </p>
             <div class="px-10 pb-6 text-xs muted">Made with ❤ using Tailwind - many thanks to <a
                     href="https://jurygiannelli.dev" target="_blank">ix315</a></div>
         </div>
@@ -88,7 +92,16 @@
 
                 <!-- ABOUT -->
                 <div class="col-span-8">
-                    <p class="pt-10 text-2xl font-bold">About me</p>
+                    <div class="about-row">
+                        <p class="pt-10 text-2xl font-bold">About me</p>
+                        <!-- OpenAPI spec link (DESKTOP ONLY): actually opens the swagger-style page -->
+                        <a class="spec-chip desktop-only" href="api/"
+                            title="OpenAPI 3.1 spec - for machines (and curious humans)">
+                            <span class="spec-label">OpenAPI spec</span>
+                            <span class="spec-method">GET</span>
+                            <span class="spec-path">/api/v9/nicola-giannelli.json</span>
+                        </a>
+                    </div>
                     <p class="pt-2">
                         Senior backend engineer from Siena, Italy. I've spent the last 9 years on the same enterprise
                         platform, growing from junior developer to technical owner of the backend handling conversations and the back-office.
